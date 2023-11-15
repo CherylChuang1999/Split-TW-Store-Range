@@ -53,10 +53,6 @@ defaultSubstreetRow = {
 
 dfDefaultStreet = pd.DataFrame([defaultStreetRow])
 dfDefaultSubstreet = pd.DataFrame([defaultSubstreetRow])
-isStoreStreetFolderExist = os.path.exists(storeStreetDirectory)
-
-if not isStoreStreetFolderExist:
-	os.makedirs(storeStreetDirectory)
 
 try:
     for s in dfStreets['StoreID'].unique():
